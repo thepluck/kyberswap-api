@@ -1,2 +1,2 @@
-import { getSwapRoute } from './apis/get';
-getSwapRoute();
+import { swap } from "./apis/swap";
+swap();

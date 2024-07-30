@@ -1,11 +1,12 @@
 import { createWalletClient, http } from 'viem';
-import { mnemonicToAccount } from 'viem/accounts';
+import { privateKeyToAccount } from 'viem/accounts';
 import { bitTorrent } from 'viem/chains';
 import 'dotenv/config';
 
-const account = mnemonicToAccount(process.env.MNEMONIC!);
+const privateKey = process.env.PRIVATE_KEY! as `0x${string}`;
+export const account = privateKeyToAccount(privateKey);
 
-const client = createWalletClient({
+export const client = createWalletClient({
   transport: http(),
   chain: bitTorrent,
   account,
