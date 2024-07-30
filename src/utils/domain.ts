@@ -1,0 +1,1 @@
+export const aggregatorDomain = `https://aggregator-api.kyberswap.com`;

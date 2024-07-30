@@ -1,4 +1,12 @@
 {
   "name": "kyberswap-api",
-  "packageManager": "yarn@4.3.1"
+  "packageManager": "yarn@4.3.1",
+  "dependencies": {
+    "@types/node": "^22.0.0",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "viem": "^2.18.2"
+  }
 }
